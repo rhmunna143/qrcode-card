@@ -7,13 +7,89 @@
 
     <style>
         .card-container {
-            
+            border: 1px solid black;
+            color: black;
+            line-height: 5px;
+            height: 100px;
+            width: 350px;
+            font-weight: 900;
+            padding: 1px;
+            position: relative;
+        }
+
+        .head {
+            font-size: 14px;
+        }
+
+        .sub-head {
+            font-size: 12px;
+        }
+
+        .normal {
+            font-size: 10px;
+        }
+
+        .small {
+            font-size: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+        }
+
+        .barcode-container {
+            width: 60%;
+            height: 10%;
+            position: absolute;
+            bottom: 20px;
+            left: 95px;
+        }
+
+        .barcode-img {
+            height: 30px;
+            width: 140px;
         }
     </style>
 </head>
 <body>
-    <div class="card-container">
+    <div class="card-container normal">
+        <div class="text-container grid">
+            <div class="text-container-1 normal">
+                <p>Shade: <span>A</A></span></p>
+                <p>CutNo: <span>27</span></p>
+                <p>Size: <span>S - 1</span></p>
+                <p>St/Sr: <span>1 - 24</span></p>
+                <p>Qty: <span>24</span></p>
+            </div>
+    
+            <div class="text-container-2">
+                <p class="sub-head">Auto: <span>76553</span></p>
+                <p>BunNo: <span>1</span></p>
+                <p>Style: </p>
+                <p>Color: </p>
+            </div>
+    
+            <div class="text-container-3">
+                <p>BACK PART</p>
+                <p class="head">LONG PANT</p>
+                <p><span>PD SDV010,11</span></p>
+                <p><span>BLACK</span></p>
+            </div>
+    
+            <div class="text-container-4">
+                <p class="small">CLOTHING PART</p>
+                <p>DT: <span>21/08</span></p>
+                <p><span>1/26</span></p>
+            </div>
+        </div>
 
+        <div class="barcode-container">
+            <div class="barcode">
+                <img class="barcode-img" src="./ift.png" alt="barcode-img">
+            </div>
+        </div>
     </div>
 </body>
 </html>
